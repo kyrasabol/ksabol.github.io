@@ -1,0 +1,224 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Josefin Sans';
+    src: url('JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Josefin Sans Bold';
+    src: url('JosefinSans-SemiBold.ttf') format('truetype');
+}
+
+/* 
+    Easy & Eco-friendly
+    Author: Kyra Sabol
+    Date created: April 22, 2021
+
+    Filename: styles.css
+
+    PROGRESS
+        First draft (4/22/21): added HTML and Body styles (html background color, body color and background color)
+        (4/23/21): Scrapped first draft. Created styles2.css, but changed name to styles.css
+
+    Color set: 
+        Brown: rgba(195,167,140,255)
+        White: rgba(252,251,249,255)
+        Green: rgba(192,208,136,255)
+*/
+
+/* Headers */
+
+header{
+    font-family: 'Josefin Sans';
+    background-color: rgba(252,251,249,255);
+    text-align: center;
+    padding: 0.5em;
+    color: rgba(195,167,140,255);
+    color: hsl(29, 31.4, 65.7);
+    font-size: 2em;
+}
+
+/* M2LO14 Demonstrated the use of progressive enhancement in CSS by 
+    adding rgb so older browsers can render the color */
+
+h1{
+    font-family: 'Josefin Sans Bold';
+    font-size: 2em;
+    padding-top: 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    text-align: center;
+}
+
+
+/* Nav */
+
+nav > ul {
+    background-color: rgba(195,167,140,255);
+    font-family: 'Josefin Sans';
+    color: rgba(252,251,249,255);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.5em;
+    text-align: center;
+}
+/* M2LO5 Demonstrated contextual selectors using parent > child method */
+
+nav > ul > li {
+    display: inline;
+    padding: 3em;
+}
+
+nav > ul > li > a:link{
+    color: rgba(252,251,249,255);
+    text-decoration: none;
+}
+
+nav > ul > li > a:visited{
+    color: rgba(252,251,249,255);
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+    color: rgba(252,251,249,255);
+    text-decoration: underline;
+}
+
+
+/* Body */
+
+body{
+    font-size: 20px;
+    color: black;
+    font-family: 'Josefin Sans';
+    background-color: rgba(252,251,249,255);
+    margin: 3em;
+    line-height: 1.5em;
+}
+/* M2LO3 Demonstrated style inheritance by creating a 
+    body color which will be passed down to all body elements */
+
+/* M2LO13 Demonstrated how CSS can change presentation of textual elements by 
+    adjusting body text and spacing */
+
+#Ready p::first-line{
+    text-align: center;
+}
+
+/* M2LO11 Demonstrated a pseudo-element selector by using ::first line */
+
+a[href$="com"]{
+    color: rgba(192,208,136,255);
+    text-decoration: none;
+}
+/* M2LO7 Demonstrated a CSS attribute selector other than class or id
+    by using a[href$="com"] */
+
+
+body a:hover{
+    color: rgba(192,208,136,255);
+    text-decoration: underline;
+}
+/* M2LO11 Demonstrated a pseudo-classes by using a:hover */
+
+
+body a:visited{
+    color: rgba(192,208,136,255);
+    text-decoration: none;
+}
+
+
+/* Sections */
+
+#Ready{
+    background-color: rgba(192,208,136,255);
+    padding: 2em;
+}
+
+/* M2LO15 Applied colors using CSS by changing background color to green */
+/* M2LO6 Demonstrated a CSS id by #Ready */
+
+#Ready a:link{
+    color: rgba(252,251,249,255);
+    text-decoration: none;
+}
+
+/* M2LO5 Demonstrated contextual selectors by using the parent descendant method */
+
+#Ready a:hover{
+    color: rgba(252,251,249,255);
+    text-decoration: underline;
+}
+
+#Ready a:visited{
+    color: rgba(252,251,249,255);
+    text-decoration: underline;
+}
+
+#aboutme{
+    background-color: rgba(195,167,140,255);
+    padding: 1em;
+    margin-top: 2em;
+    color: rgba(252,251,249,255);
+}
+
+#v1.topic{
+    margin: 2em;
+}
+
+#v1.topic::first-line{
+    font-family: 'Josefin Sans Bold';
+}
+
+#wc{
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+.caption{
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+/* M2LO3 Demonstrated style precedence and inheritance by 
+changing the about text color to white rather than black */
+
+/* M2LO12 Demonstrated how CSS can change presentation of page elements by using
+    margin-top to increase space between the "about" section and the "ready" section */
+
+
+/* Footers */
+
+footer{
+    background-color: rgba(252,251,249,255);
+    color: black;
+    padding-top: 1em;
+    text-align: center;
+}
+
+
+/* Images */
+
+#icon{
+    max-width: 5%;
+    padding: 0em;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    padding-bottom: 0em;
+}
+
+/* M2LO6 Demonstrated a CSS class selector by .image*/
+
+#mepic{
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
